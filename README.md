@@ -1,6 +1,6 @@
 # AI text detector
 
-Simple app to determine if text is AI-generated or not.
+App that determines degree to which text is AI-generated.
 Text is scored by GPT-2, a DetectGPT-style check, and GPTZero. The chart compares 2 metrics: perplexity with burstiness variance.
 
 ## Run
