@@ -1,6 +1,7 @@
 # AI text detector
 
-One passage is scored by GPT-2, a DetectGPT-style check, and GPTZero. The chart compares perplexity with burstiness variance.
+Simple app to determine if text is AI-generated or not.
+Text is scored by GPT-2, a DetectGPT-style check, and GPTZero. The chart compares 2 metrics: perplexity with burstiness variance.
 
 ## Run
 
