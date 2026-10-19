@@ -1,0 +1,13 @@
+{
+  "name": "ai-text-detector",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n web,api -c magenta,cyan \"npm run dev -w web\" \"npm run dev:api\"",
+    "dev:api": ".venv/bin/uvicorn app.main:app --app-dir apps/api --reload --reload-dir apps/api --port 8000",
+    "dev:web": "npm run dev -w web"
+  },
+  "workspaces": ["apps/web"],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

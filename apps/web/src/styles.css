@@ -1,0 +1,128 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f1e8;
+  --ink: #241c15;
+  --muted: #6d6256;
+  --line: #e4d8c8;
+  --panel: #fffaf3;
+  --accent: #8a5a2a;
+  font-family: "Iowan Old Style", Palatino, Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+button, textarea {
+  font-family: "SF Mono", ui-monospace, Menlo, monospace;
+}
+
+.shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 24px 72px;
+}
+
+.kicker {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.lede, .hint {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+form, section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button {
+  background: var(--accent);
+  color: #fffaf3;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+button:disabled { opacity: 0.55; cursor: default; }
+
+button.ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.banner {
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: #f8e4dc;
+  border: 1px solid #e3b2a4;
+  border-radius: 8px;
+}
+
+.chart { height: 360px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "SF Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.82rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+th:nth-child(n + 2),
+td:nth-child(n + 2) {
+  font-variant-numeric: tabular-nums;
+}
